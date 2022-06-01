@@ -21,11 +21,32 @@ The Poisson process is one of the most widely-used counting processes. It is usu
 
 ![image](https://user-images.githubusercontent.com/104613195/171325180-eaf80506-545c-4f35-878a-1e95aa0e81e3.png)
 
-
-
 # Program :
+```python 
 
- 
+Developed By : Lokesh Krishaa M
+Reg No: 212220230030
 
-# Results and Output : 
+import numpy as np
+import math
+
+l=3
+t=2
+
+def p(x):
+    return round(math.exp(-l*t)*((l*t)*x)/math.factorial(x),2)
+
+print("probability that exactly 4 customers arrive",p(4))
+
+n=1-(p(0)+p(1)+p(2)+p(3)+p(4))
+print("probability that more than 4 customers arrive",n)
+
+m=p(0)+p(1)+p(2)+p(3)
+print(" rate of 3 per minute during a time interval of 2 min.",m)
+```
+
+# Output:
+![mathto](https://user-images.githubusercontent.com/75234646/171338184-2c6a00d5-1bb1-40aa-8e1f-3f8eee01836e.PNG)
+
+# Results : 
  
